@@ -20,9 +20,6 @@ const ExportData: React.FC<ExportDataProps> = ({ onPrevious }) => {
       // Make a request to the backend to generate and return the CSV
       const res = await fetch('https://data2model.onrender.com/export', { 
         method: 'GET' ,
-        headers: {
-          "Content-Type": "application/json"
-        },
         credentials: "include"
       });
       
